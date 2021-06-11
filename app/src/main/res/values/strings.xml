@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">TripPlanner</string>
+    <string name="app_name">Trip\nPlanner</string>
+    <string name="novo_planejamento">Novo planejamento</string>
+    <string name="meus_planejamentos">Meus planejamentos</string>
 </resources>

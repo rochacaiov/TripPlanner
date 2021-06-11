@@ -5,14 +5,41 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity" android:background="#1D2026">
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:layout_width="257dp"
+            android:layout_height="174dp"
+            android:text="@string/app_name"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" android:textAlignment="center" android:textColor="#FAA688"
+            android:textSize="48sp" android:fontFamily="@font/rubik"
+            app:layout_constraintVertical_bias="0.110000014" android:textAllCaps="true"
+            android:id="@+id/txtView_tripPlanner"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/trip_planner_logo"
+            android:id="@+id/img_logo"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.26999998"/>
+    <android.support.v7.widget.AppCompatButton
+            android:text="@string/novo_planejamento"
+            android:layout_width="238dp"
+            android:layout_height="55dp" android:id="@+id/btn_newPlan"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.74" android:background="@drawable/btn_shape"
+            android:backgroundTint="@null" android:fontFamily="@font/rubik_medium" android:textSize="16sp"/>
+
+    <android.support.v7.widget.AppCompatButton
+            android:text="@string/meus_planejamentos"
+            android:layout_width="238dp"
+            android:layout_height="55dp" android:id="@+id/btn_myPlans"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.86" android:background="@drawable/btn_shape"
+            android:backgroundTint="@null" android:fontFamily="@font/rubik_medium" android:textSize="16sp"/>
 
 </android.support.constraint.ConstraintLayout>
