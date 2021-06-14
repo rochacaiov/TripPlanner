@@ -15,12 +15,14 @@
         android:inputType="date"
         android:text="Data de ida"
         android:textColor="#EAE5E5"
-        tools:layout_editor_absoluteX="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="394dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="wrap_content"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#1B1A1A"
         android:clickable="true"
@@ -30,7 +32,7 @@
         android:textAlignment="center"
         android:textColor="#F1EEEE"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="23dp" />
 
     <android.support.design.widget.TextInputLayout
@@ -79,14 +81,16 @@
         android:text="Data de volta"
         android:textColor="@color/white"
         android:textColorHint="#F4F0F0"
-        tools:layout_editor_absoluteX="123dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="451dp" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:text="Buscar"
-        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="543dp" />
 </android.support.constraint.ConstraintLayout>
