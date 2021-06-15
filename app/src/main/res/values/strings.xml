@@ -15,6 +15,7 @@
     <string name="data_volta" translatable="false">DATA VOLTA</string>
     <string name="or_amento" translatable="false">ORCAMENTO</string>
     <string name="convers_o" translatable="false">CONVERSÃO</string>
+    <string name="acesse_o_google"><a href="http://google.com.br">ACESSE O GOOGLE</a></string>
 
     <string-array name="moedas">
         <item>BRL</item>

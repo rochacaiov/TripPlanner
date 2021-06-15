@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="novo_planejamento">New Planning</string> <string
+
+        name="meus_planejamentos">My plans </string> <string
+        name="insira_o_local_destino">INSERT DESTINATION PLACE </string> <string
+        name="data_de_partida">DEPARTURE DATE  </string> <string
+        name="data_de_chegada">ARRIVAL DATE </string> <string
+        name="adicionar_plano_de_viagem">ADD TRAVEL PLAN</string> <string
+        name="insira_o_or_amento_total">INSERT TOTAL BUDGET </string> <string
+        name="selecione_as_moedas_que_deseja_converter">SELECT THE CURRENCIES YOU WANT TO CONVERT</string> <string
+        name="destino">DESTINY:</string> <string name="data_partida">DEPARTURE DATE:</string> <string
+        name="data_volta">DATE OF RETURN:</string> <string name="or_amento">BUDGETS:</string> <string
+        name="convers_o">CONVERSION:</string> <string
+        name="acesse_o_google"> <a href="http://google.com.br">ACCESS GOOGLE</a></string>
+</resources>
