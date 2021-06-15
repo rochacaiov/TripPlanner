@@ -1,5 +1,32 @@
 <resources>
+    <string name="maps_api_key">AIzaSyBBtC5dULDc7W1A5eRJIf2V1qK19G-LOkQ</string>
+
     <string name="app_name">Trip\nPlanner</string>
-    <string name="novo_planejamento">Novo planejamento</string>
-    <string name="meus_planejamentos">Meus planejamentos</string>
+    <string name="novo_planejamento" translatable="false">Novo planejamento</string>
+    <string name="meus_planejamentos" translatable="false">Meus planejamentos</string>
+    <string name="insira_o_local_destino" translatable="false">INSIRA O LOCAL DESTINO</string>
+    <string name="data_de_partida" translatable="false">DATA DE PARTIDA</string>
+    <string name="data_de_chegada" translatable="false">DATA DE CHEGADA</string>
+    <string name="adicionar_plano_de_viagem" translatable="false">ADICIONAR PLANO DE VIAGEM</string>
+    <string name="insira_o_or_amento_total" translatable="false">INSIRA O ORÇAMENTO TOTAL</string>
+    <string name="selecione_as_moedas_que_deseja_converter" translatable="false">SELECIONE AS MOEDAS QUE DESEJA CONVERTER</string>
+    <string name="destino" translatable="false">DESTINO</string>
+    <string name="data_partida" translatable="false">DATA PARTIDA</string>
+    <string name="data_volta" translatable="false">DATA VOLTA</string>
+    <string name="or_amento" translatable="false">ORCAMENTO</string>
+    <string name="convers_o" translatable="false">CONVERSÃO</string>
+
+    <string-array name="moedas">
+        <item>BRL</item>
+        <item>USD</item>
+        <item>ILS</item>
+        <item>CNY</item>
+        <item>AUD</item>
+        <item>CHF</item>
+        <item>JPY</item>
+        <item>EUR</item>
+        <item>ARS</item>
+        <item>GBP</item>
+        <item>CAD</item>
+    </string-array>
 </resources>

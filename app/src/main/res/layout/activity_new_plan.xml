@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".NewPlanActivity" android:background="#1D2026">
+
+    <fragment android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/fragment_place"
+              android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+              app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintVertical_bias="0.07999998"/>
+
+    <TextView
+            android:text="@string/insira_o_local_destino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/view_place"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.04000002"
+            android:fontFamily="@font/rubik" android:textColor="#FFFFFF" android:textAlignment="center"/>
+    <EditText
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/input_dateGo"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_place" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.07999998"
+            android:drawableStart="@drawable/ic_baseline_calendar_today_24" android:drawablePadding="10dp"
+            android:hint="@string/data_de_partida" android:textColorHint="#AEAEAE"/>
+    <EditText
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/input_dateBack"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_place" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.22000003"
+            android:drawableStart="@drawable/ic_baseline_calendar_today_24" android:drawablePadding="10dp"
+            android:hint="@string/data_de_chegada" android:textColorHint="#AEAEAE"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:text="@string/adicionar_plano_de_viagem"
+            android:layout_width="300dp"
+            android:layout_height="55dp" android:id="@+id/btn_myPlans"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.86" android:background="@drawable/btn_shape"
+            android:backgroundTint="@null" android:fontFamily="@font/rubik_medium" android:textSize="16sp"/>
+    <EditText
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/input_totalValue"
+            app:layout_constraintTop_toBottomOf="@+id/input_dateBack"
+            app:layout_constraintBottom_toTopOf="@+id/btn_myPlans" app:layout_constraintVertical_bias="0.44"
+            android:hint="@string/insira_o_or_amento_total"
+            android:drawableStart="@drawable/ic_baseline_account_balance_wallet_24" android:drawablePadding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:textColorHint="#AEAEAE"/>
+    <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" android:id="@+id/drop_toCoin"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_totalValue"
+            app:layout_constraintBottom_toTopOf="@+id/btn_myPlans" app:layout_constraintVertical_bias="0.619"
+            android:foregroundTint="#FFFFFF" android:backgroundTint="#FFFFFF"
+            app:layout_constraintHorizontal_bias="0.871"/>
+    <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" android:id="@+id/drop_fromCoin"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_totalValue"
+            app:layout_constraintBottom_toTopOf="@+id/btn_myPlans" app:layout_constraintVertical_bias="0.619"
+            android:foregroundTint="#FFFFFF" android:backgroundTint="#FFFFFF"
+            app:layout_constraintHorizontal_bias="0.131"/>
+    <TextView
+            android:text="@string/selecione_as_moedas_que_deseja_converter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/input_totalValue" android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/drop_toCoin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_baseline_arrow_forward_24"
+            android:id="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintBottom_toTopOf="@+id/btn_myPlans" app:layout_constraintEnd_toStartOf="@+id/drop_toCoin"
+            app:layout_constraintStart_toEndOf="@+id/drop_fromCoin" app:layout_constraintVertical_bias="0.38"/>
+
+
+    <!--    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">-->
+<!--        -->
+<!--&lt;!&ndash;        <LinearLayout android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                      android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                      android:orientation="vertical">&ndash;&gt;-->
+<!--&lt;!&ndash;            &ndash;&gt;-->
+<!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+<!--    </ScrollView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PlanActivity" android:background="#1D2026">
+
+    <TextView
+            android:text="@string/destino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txtView_localDestino"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.064" app:layout_constraintHorizontal_bias="0.045"
+            android:textColor="#FFFFFF"/>
+    <TextView
+            android:text="@string/data_partida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txtView_dataPartida"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.161" app:layout_constraintHorizontal_bias="0.045"
+            android:textColor="#FFFFFF"/>
+    <TextView
+            android:text="@string/data_volta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txtView_dataVolta"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.245" app:layout_constraintHorizontal_bias="0.044"
+            android:textColor="#FFFFFF"/>
+    <TextView
+            android:text="@string/or_amento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txtView_orcamento"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.375" app:layout_constraintHorizontal_bias="0.043"
+            android:textColor="#FFFFFF"/>
+    <TextView
+            android:text="@string/convers_o"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txtView_conversao"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            android:textColor="#FFFFFF"/>
+    <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" android:id="@+id/txtResponse_localDestino"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.064" app:layout_constraintHorizontal_bias="0.855"
+            android:textColor="#FFFFFF"/>
+    <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content" android:id="@+id/txtResponse_dataPartida"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.161" app:layout_constraintHorizontal_bias="0.855"
+            android:textColor="#FFFFFF"/>
+    <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content" android:id="@+id/txtResponse_dataVolta"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.244" app:layout_constraintHorizontal_bias="0.854"
+            android:textColor="#FFFFFF"/>
+    <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content" android:id="@+id/txtResponse_orcamento"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.375" app:layout_constraintHorizontal_bias="0.854"
+            android:textColor="#FFFFFF"/>
+    <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content" android:id="@+id/txtResponse_conversao"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.854"
+            android:textColor="#FFFFFF"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
